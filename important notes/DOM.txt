@@ -1,0 +1,13 @@
+The browser, not JavaScript, is responsible for parsing HTML and constructing the Document Object Model (DOM).
+When a browser receives an HTML document, it performs the following steps:
+Parsing HTML:
+The browser's HTML parser reads the HTML code and interprets its structure.
+Building the DOM Tree:
+Based on the parsed HTML, the browser creates an in-memory tree-like representation of the document, known as the Document Object Model (DOM). Each HTML element, attribute, and text content becomes a "node" in this DOM tree.
+Constructing the CSSOM:
+If CSS stylesheets are linked, the browser also parses them and creates a CSS Object Model (CSSOM) representing the styles.
+Creating the Render Tree:
+The browser combines the DOM tree and the CSSOM to create a render tree, which includes visual information about each element.
+Layout and Painting:
+The browser then calculates the layout of elements on the screen and paints the visual representation of the page. 
+Once the DOM is constructed, JavaScript can interact with it. JavaScript does not create the DOM; it manipulates the existing DOM that the browser has already built. Through the DOM API, JavaScript can access, modify, add, or remove elements, attributes, and text content within the web page, dynamically altering the displayed content and user experience.
