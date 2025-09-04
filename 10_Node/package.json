@@ -1,5 +1,5 @@
 {
-  "name": "09_node",
+  "name": "10_node",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -10,10 +10,10 @@
   "author": "Pushpesh",
   "license": "ISC",
   "dependencies": {
-    
+    "@tailwindcss/cli": "^4.1.12",
     "body-parser": "^2.2.0",
-    "express": "^5.1.0"
-    
+    "express": "^5.1.0",
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"

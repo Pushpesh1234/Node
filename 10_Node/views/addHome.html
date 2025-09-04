@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resgister Home</title>
+    <link rel="stylesheet" href="/output.css"></link>
 </head>
 <body>
     <header>
@@ -12,17 +13,21 @@
         </h1>
 
     </header>
-    <main>
+    <main class="border-solid border-1 mt-5 border-gray-300 ml-5 rounded-2xl pl-4 pt-8 pb-8">
+       
         <form action="/host/add-home" method="POST">
+            
             <label for="houseName">Home:</label>
-            <input type="text"  id="houseName" name="home" value=" " placeholder="Input Home Name">
+            <input class="border border-gray-300 rounded-md" type="text"  id="houseName" name="home" value=" " placeholder="Input Home Name">
         </br></br>
         
             <label for="id">Email:</label>
-            <input type="text"  id="id" name="Email" value=" " placeholder="johndoe@gmail.com">
+            <input class="border border-gray-300 rounded-md" type="text"  id="id" name="Email" value=" " placeholder="johndoe@gmail.com">
             </br></br>
-            <input type="submit" >
+            <input class="bg-indigo-500 text-white rounded-md" type="submit" >
+            
         </form>
+        
     </main>
 </body>
 </html>
