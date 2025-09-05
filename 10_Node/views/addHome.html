@@ -8,23 +8,23 @@
 </head>
 <body>
     <header>
-        <h1>
-            Register Your Home on Below Form
+        <h1 class="text-center mt-3 text-[50px]">
+            Register Your Home 
         </h1>
 
     </header>
-    <main class="border-solid border-1 mt-5 border-gray-300 ml-5 rounded-2xl pl-4 pt-8 pb-8">
+    <main class="border-solid border-1 mt-5 border-gray-300 rounded-2xl pl-4 pt-8 pb-8 w-[50%] m-auto ">
        
-        <form action="/host/add-home" method="POST">
+        <form action="/host/add-home" method="POST" class=" flex flex-col justify-center items-center gap-y-5"  >
             
-            <label for="houseName">Home:</label>
-            <input class="border border-gray-300 rounded-md" type="text"  id="houseName" name="home" value=" " placeholder="Input Home Name">
-        </br></br>
+            <!-- <label for="houseName">Home:</label> -->
+            <input class="pl-5 pt-1 pb-1 w-[300px]" type="text"  id="houseName" name="home" value=" " placeholder="Input Home Name">
         
-            <label for="id">Email:</label>
-            <input class="border border-gray-300 rounded-md" type="text"  id="id" name="Email" value=" " placeholder="johndoe@gmail.com">
-            </br></br>
-            <input class="bg-indigo-500 text-white rounded-md" type="submit" >
+        
+            <!-- <label for="id">Email:</label> -->
+            <input class=" pl-5 pt-1 pb-1 w-[300px]" type="text"  id="id" name="Email" value=" " placeholder="johndoe@gmail.com">
+            
+            <input class=" bg-[#FF5A5F] w-[300px] pl-5 pt-1 pb-1 text-white rounded-md" type="submit" >
             
         </form>
         
