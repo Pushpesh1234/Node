@@ -6,12 +6,14 @@ const express=require("express");
 // Local Modules
 const rootDir=require('./util/pathUtil');
 const userRouter=require('./routes/userRouter');
- const hostRouter=require('./routes/hostRouter');
+ const {hostRouter}=require('./routes/hostRouter');
 
 // Variables
 const PORT=3001;
 const HOST=`https://fantastic-space-pancake-r4q9rrq9jrwh5q7x-3000.app.github.dev/`
 const app=express();
+app.set('view engine','ejs');
+app.set('views','views');
 
 // Server Listening incoming Request
 app.listen(PORT,()=>{

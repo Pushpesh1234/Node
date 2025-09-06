@@ -11,14 +11,18 @@ const bodyParser = require('body-parser');
 
 // Variables
  const hostRouter=experess.Router();
+ const registerdHomes=[];
 
  hostRouter.get('/add-home',(req,res,next)=>{
     res.sendFile(path.join(rootDir,'views','addHome.html'));
  })
 
  hostRouter.post('/add-home',(req,res,next)=>{
+   registerdHomes.push({home:req.body.home,email:req.body.email})
+   console.log(registerdHomes)
     res.sendFile(path.join(rootDir,'views','homeAdded.html'));
-    console.log(req.body)
+    console.log()
  })
 
- module.exports=hostRouter;
+ exports.hostRouter=hostRouter;
+ exports.registerdHomes=registerdHomes;

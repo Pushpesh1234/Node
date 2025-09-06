@@ -18,5 +18,18 @@
          Welcome to AirBnB
         </h1>
     </header>
+    <section>
+        <h1>
+            Registred Homes:
+        </h1>
+        <ul>
+            <% lonenly.forEach(homes=>{%>
+              <li>
+                <%= homes.home%>
+              </li>
+            <%})%>
+            
+        </ul>
+    </section>
 </body>
 </html>
