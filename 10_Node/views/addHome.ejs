@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resgister Home</title>
-    <link rel="stylesheet" href="/output.css"></link>
+<%- include('./partials/head') %>
 </head>
 <body>
-    <header>
+    <%- include('./partials/header') %>
+    <!-- <header>
         <h1 class="text-center mt-3 text-[50px]">
             Register Your Home 
         </h1>
 
-    </header>
+    </header> -->
     <main class="border-solid border-1 mt-5 border-gray-300 rounded-2xl pl-4 pt-8 pb-8 w-[50%] m-auto ">
        
         <form action="/host/add-home" method="POST" class=" flex flex-col justify-center items-center gap-y-5"  >
