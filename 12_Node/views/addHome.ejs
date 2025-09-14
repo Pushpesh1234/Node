@@ -1,0 +1,32 @@
+<%- include('./partials/head') %>
+</head>
+<body>
+    <%- include('./partials/header') %>
+    <!-- <header>
+        <h1 class="text-center mt-3 text-[50px]">
+            Register Your Home 
+        </h1>
+
+    </header> -->
+    <main class="border-solid border-1 mt-5 border-gray-300 rounded-2xl pl-4 pt-8 pb-8 w-[50%] m-auto ">
+       
+        <form action="/host/add-home" method="POST" class=" flex flex-col justify-center items-center gap-y-5"  >
+            <h1 class="text-[30px]  font-bold">Register your Home on AirBNB</h1>
+            <!-- <label for="houseName">Home:</label> -->
+            <input class="pl-5 pt-1 pb-1 w-[300px] focus:ring-indigo-500 focus:border-indigo-500 outline-none shadow-sm border border-gray-300  border rounded-md " type="text"  id="houseName" name="home" value="" placeholder="Input Home Name">
+        
+        
+            <!-- <label for="id">Email:</label> -->
+            <input class=" focus:ring-indigo-500 focus:border-indigo-500 outline-none pl-5 pt-1 pb-1 w-[300px] bg-white-100 shadow-sm border rounded-md border-gray-300 type="text"  id="id" name="email" value="" placeholder="johndoe@gmail.com">
+             <input class=" pl-5 pt-1 pb-1 w-[300px] focus:ring-indigo-500 outline-none focus:border-indigo-500bg-white-100 shadow-sm border rounded-md  border-gray-300" type="text"  id="id" name="price" value="" placeholder="price">
+             <input class=" pl-5 pt-1 pb-1 w-[300px]  focus:ring-indigo-500  outline-none focus:border-indigo-500 bg-white-100 shadow-sm border rounded-md  border-gray-300" type="text"  id="id" name="location" value="" placeholder="Location of house">
+             <input class=" pl-5 pt-1 pb-1 w-[300px]  focus:ring-indigo-500  outline-none focus:border-indigo-500 bg-white-100 shadow-sm border rounded-md  border-gray-300" type="text"  id="id" name="rating" value="" placeholder="Give the star">
+             <input class=" pl-5 pt-1 pb-1 w-[300px]  focus:ring-indigo-500  outline-none focus:border-indigo-500 bg-white-100 shadow-sm border rounded-md  border-gray-300" type="text"  id="id" name="image" value="" placeholder="Image">
+            
+            <input class=" bg-[#FF5A5F] w-[300px] pl-5 pt-1 pb-1 text-white rounded-md" type="submit" >
+            
+        </form>
+        
+    </main>
+</body>
+</html>
