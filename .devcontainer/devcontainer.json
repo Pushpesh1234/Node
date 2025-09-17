@@ -1,0 +1,13 @@
+{
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "file-icons.file-icons",
+                "esbenp.prettier-vscode",
+                "ritwickdey.liveserver",
+                "pkief.material-icon-theme"
+
+            ]
+        }
+    }
+}
