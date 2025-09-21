@@ -1,6 +1,6 @@
 // External Modules
  const experess=require('express');
-
+console.log
  // Local Modules
 const {addHome,homeAdded} = require('../controllers/home');
 
@@ -11,7 +11,7 @@ const {addHome,homeAdded} = require('../controllers/home');
  hostRouter.get('/add-home',addHome);
   
  hostRouter.post('/add-home',homeAdded);
-    
+      
 
  exports.hostRouter=hostRouter;
  

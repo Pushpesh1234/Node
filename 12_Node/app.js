@@ -7,6 +7,7 @@ const express=require("express");
 const rootDir=require('./util/pathUtil');
 const userRouter=require('./routes/userRouter');
  const {hostRouter}=require('./routes/hostRouter');
+ const status=require('./controllers/error.js');
 
 // Variables
 const PORT=3001;
@@ -26,7 +27,5 @@ app.use(userRouter);
 // app.use(express.urlencoded());
 app.use('/host',hostRouter);
 
-app.use((req,res,next)=>{
-    // res.status(404).sendFile(path.join(rootDir,'views','404.html'));
-    res.render('404',{pageTitle:"Status 404"})
-})
+app.use(status.error);
+
