@@ -5,7 +5,9 @@
                 "file-icons.file-icons",
                 "esbenp.prettier-vscode",
                 "ritwickdey.liveserver",
-                "pkief.material-icon-theme"
+                "pkief.material-icon-theme",
+                "bradlc.vscode-tailwindcss"
+
 
             ]
         }
