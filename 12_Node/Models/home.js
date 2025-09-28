@@ -17,7 +17,7 @@ module.exports=class Homes{
     this.price=price
     this.location=location
     this.rating=rating
-    this.image-image
+    this.image=image
   }
   save(){
     Homes.showAll(registerdHomes=>{
@@ -33,10 +33,15 @@ fs.writeFile(homeFilePath,JSON.stringify(registerdHomes),error=>{
   static showAll(callback){
     console.log(callback)
    const homeFilePath=path.join(rootDir,'data','home.json')
-    fs.readFile(homeFilePath,(error,data)=>{
-        console.log(data,"ERROR HERE")
-        if(!error){
-          console.log("hello")
+           console.log("hi running")
+   if(fs.existsSync(homeFilePath)){
+    // const stats=fs.statSync(homeFilePath===0)
+         console.log("hi in IF")
+  
+   fs.readFile(homeFilePath,(error,data)=>{
+        console.log("ERROR HERE:",error)
+        if(fs.statSync(homeFilePath).size!==0){
+          console.log("DATA:", data)
            callback( JSON.parse(data))
         }
         else{
@@ -44,7 +49,24 @@ fs.writeFile(homeFilePath,JSON.stringify(registerdHomes),error=>{
             callback([]);
         }
     })
+
+   }
     
+    else{
+     
+        try {
+          fs.mkdirSync("data",{recursive:true}) 
+       const fileDescriptor= fs.openSync(homeFilePath,'wx');
+        
+      fs.closeSync(fileDescriptor);
+    console.log('Empty file created synchronously successfully:', homeFilePath);
+    console.log('TWO TIMES')
+      callback([])
+        }
+ catch (err) {
+    console.error('Error creating file:', err);
+}
+    }
   }
 
 }

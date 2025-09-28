@@ -5,7 +5,7 @@ const express=require("express");
 
 // Local Modules
 const rootDir=require('./util/pathUtil');
-const userRouter=require('./routes/userRouter');
+const storeRouter=require('./routes/storeRouter');
  const {hostRouter}=require('./routes/hostRouter');
  const status=require('./controllers/error.js');
 
@@ -23,7 +23,7 @@ app.listen(PORT,()=>{
 
 app.use(express.static(path.join(rootDir,'public')));
 app.use(express.urlencoded());
-app.use(userRouter);
+app.use(storeRouter);
 // app.use(express.urlencoded());
 app.use('/host',hostRouter);
 
